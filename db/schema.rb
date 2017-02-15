@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170215134205) do
+ActiveRecord::Schema.define(version: 20170215171557) do
 
   create_table "orders", force: :cascade do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170215134205) do
     t.decimal  "totalprice"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "contact"
   end
 
 end
