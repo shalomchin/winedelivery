@@ -2,6 +2,10 @@ class OrdersController < ApplicationController
   def new
   end
 
+  def index
+    @orders = Order.all
+  end
+
   def create
     @order = Order.new(order_param)
     @order.save

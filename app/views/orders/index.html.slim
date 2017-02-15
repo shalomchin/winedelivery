@@ -1,0 +1,17 @@
+h1
+  | List of Orders
+table
+  tr
+    th
+      | Order id
+    th
+      | Name
+- @orders.each do |order|
+  tr
+    td
+      = order.id 
+    td
+      = order.name
+    td
+      = link_to 'Show', order_path(order)
+      br
