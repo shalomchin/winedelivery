@@ -5,7 +5,7 @@ class CreateOrders < ActiveRecord::Migration[5.0]
       t.text :address
       t.integer :qty1
       t.integer :qty2
-      t.decimal :totalprice
+      t.integer :totalprice
 
       t.timestamps
     end

@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   def new
+    @totalprice = 0
   end
 
   def index
@@ -12,7 +13,13 @@ class OrdersController < ApplicationController
     redirect_to @order
   end
 
+  # def calculate
+  #   @totalprice = @qty1*35+@qty2*40
+  #   return @totalprice
+  # end
+
   def show
+    
     @order = Order.find(params[:id])
   end
  

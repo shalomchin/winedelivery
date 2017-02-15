@@ -6,12 +6,30 @@ table
       | Order id
     th
       | Name
+    th
+      | Address
+    th
+      | Qty wine 1
+    th
+      | Qty wine 2
+    th
+      | Total Price
+
 - @orders.each do |order|
   tr
     td
       = order.id 
     td
       = order.name
+    td
+      = order.address 
+    td
+      = order.qty1
+    td
+      = order.qty2 
+    td
+      = order.totalprice
+
     td
       = link_to 'Show', order_path(order)
       br

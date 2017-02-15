@@ -19,7 +19,6 @@
 / <br>
 / <%= f.submit %>
 / <% end %>
-
 = form_for :order, url: orders_path do |f|
   p
     = f.label :wine1_Qty
@@ -37,6 +36,7 @@
     = f.label :address
     br 
     = f.text_field :address
-  |   Final Price: xx 
+    
+     Final Price: = t 
   br 
     = f.submit
