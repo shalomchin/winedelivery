@@ -1,0 +1,34 @@
+p 
+strong Name:  
+= @order.name 
+p 
+strong Address:  
+= @order.address 
+p 
+strong Quantity of Wine1:  
+= @order.qty1 
+p 
+strong Quantity of Wine2:  
+= @order.qty2
+
+
+
+/ p
+/     = f.label :wine1_Qty
+/     br
+/     = f.text_field :qty1
+/   p
+/     = f.label :wine2_Qty
+/     br
+/     = f.text_field :qty2
+/   p
+/     = f.label :name
+/     br
+/     = f.text_field :name
+/   p 
+/   = f.label :address
+/     br 
+/   = f.text_field :address
+/   br
+/   br
+/   |   Final Price: xx 

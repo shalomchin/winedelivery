@@ -24,21 +24,19 @@
   p
     = f.label :wine1_Qty
     br
-    = f.text_field :qty1
+    = f.number_field :qty1
   p
     = f.label :wine2_Qty
     br
-    = f.text_field :qty2
+    = f.number_field :qty2
   p
     = f.label :name
     br
     = f.text_field :name
   p 
-  = f.label :address
+    = f.label :address
     br 
-  = f.text_field :address
-  br
-  br
+    = f.text_field :address
   |   Final Price: xx 
   br 
-  = f.submit
+    = f.submit
