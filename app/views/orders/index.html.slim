@@ -15,21 +15,21 @@ table
     th
       | Total Price
 
-- @orders.each do |order|
-  tr
-    td
-      = order.id 
-    td
-      = order.name
-    td
-      = order.address 
-    td
-      = order.qty1
-    td
-      = order.qty2 
-    td
-      = order.totalprice
+  - @orders.each do |order|
+   tr
+      td
+        = order.id 
+      td
+        = order.name
+      td
+        = order.address 
+      td
+        = order.qty1
+      td
+        = order.qty2 
+      td
+        = order.calculate_total_price
 
-    td
-      = link_to 'Show', order_path(order)
-      br
+      td
+        = link_to 'Show', order_path(order)
+        br

@@ -2,18 +2,18 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-@qty1 = 3
-@qty2 =2
+# @qty1 = 3
+# @qty2 =2
 
-convert = ->
-	$('#tp').text(@tp)
+# convert = ->
+# 	$('#tp').text(@tp)
 
-do totalprice = ->
-	@tp = @qty1*30+@qty2*40
-	do convert
-
-
+# do totalprice = ->
+# 	@tp = @qty1*30+@qty2*40
+# 	do convert
 
 
 
-console.log @tp
+
+
+# console.log @tp
