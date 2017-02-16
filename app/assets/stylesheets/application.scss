@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "welcome.scss";
+@import "orders.scss";
+
+.jumbotron {
+	background-image: url(champagne.jpg);
+	background-size: cover;
+	height: 500px;
+}
+
+

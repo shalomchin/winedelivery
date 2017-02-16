@@ -1,42 +1,22 @@
-/ <%= form_for :order, url: orders_path do |f| %>
-/ <p>
-/ <%= f.label :wine1_Qty  %><br>
-/ <%= f.text_field :qty1 %>
-/ </p>
-/ <p>
-/ <%= f.label :wine2_Qty %><br>
-/ <%= f.text_field :qty2 %>
-/ </p>
-/ <p>
-/ <%= f.label :name %><br>
-/ <%= f.text_field :name %>
-/ </p>
-/ <p>
-/ <%= f.label :address %><br>
-/ <%= f.text_field :address %>
-/ </p>
-/ Final Price: xx
-/ <br>
-/ <%= f.submit %>
-/ <% end %>
-= form_for :order, url: orders_path do |f|
-  p
+.container
+  = form_for :order, url: orders_path do |f|
+   p
     = f.label :wine1_Qty
     br
     = f.number_field :qty1
-  p
+   p
     = f.label :wine2_Qty
     br
     = f.number_field :qty2
-  p
+   p
     = f.label :name
     br
     = f.text_field :name
-  p 
+   p 
     = f.label :address
     br 
     = f.text_field :address
-  p 
+   p 
     = f.label :contact
     br 
     = f.text_field :contact

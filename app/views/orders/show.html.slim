@@ -1,19 +1,19 @@
-p 
-strong Name:  
-= @order.name 
-p 
-strong Address:  
-= @order.address 
-p 
-strong Quantity of Wine1:  
-= @order.qty1 
-p 
-strong Quantity of Wine2:  
-= @order.qty2
-p#tp 
-strong Total Price: 00 
+.container
+ strong Name:  
+  = @order.name 
+ p 
+ strong Address:  
+ = @order.address 
+ p 
+ strong Quantity of Wine1:  
+ = @order.qty1 
+ p 
+ strong Quantity of Wine2:  
+ = @order.qty2
+ p 
+ strong Total Price: 00 
 
-br
-= link_to 'Back', new_order_path 
+ br
+ = link_to 'Back', new_order_path 
 
 
