@@ -2,8 +2,9 @@ doctype html
 html
   head
     .jumbotron
-      h1 Express Wine Delivery
-      p Best wines within 24h
+      .container
+       h1 Express Wine Delivery
+       p Best wines within 24h
 
 
 
@@ -12,6 +13,54 @@ html
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  body
-    = yield
+    .container-fluid
+      p.brand Offering you award winning dessert wines all day long. Never be thirsty again. 
+       
+  body 
+    h1 
+     .col-xs-6.col-sm-6.col-lg-6 style="background-color:white;"  = image_tag("w1",:class => "photo", :size=>"300x600" ) 
+
+     .col-xs-6.col-sm-6.col-lg-6 style="background-color:white;"  = image_tag("w2",:class => "photo", :size=>"300x600" )
+  .col-xs-12.col-sm-12.col-lg-12 style="background-color:lavender;"
+     
+    .col-xs-6.col-sm-6.col-lg-6 style="background-color:lavender;"
+      p.brand Mustela Moscato
+      ul style=("list-style: none;") 
+        li Sweet, fresh and floral, this wine will develop after one to two years with underlying ginger undertones and honeyed chestnuts.
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+        li 
+          strong Sweetness:
+          | Piedmont, ITALY
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+          
+    
+     
+    .col-xs-6.col-sm-6.col-lg-6 style="background-color:lavender;"
+       p.brand Sagni di Giuda  
+       ul style=("list-style: none;") 
+        li Sweet, fresh and floral, this wine will develop after one to two years with underlying ginger undertones and honeyed chestnuts.
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+        li 
+          strong Sweetness:
+          | Piedmont, ITALY
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+        li 
+          strong Origin: 
+          | Piedmont, ITALY
+    .col-xs-12.col-sm-12.col-lg-12 style="background-color:white;"
+  = yield
+     
+
+
 
