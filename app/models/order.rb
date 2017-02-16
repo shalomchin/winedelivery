@@ -6,7 +6,7 @@ class Order < ApplicationRecord
  validates :contact, presence: true
  validates_format_of :contact, :with => /[1-9]+/
   def calculate_total_price
-    (qty1.to_i * 10 ) + (qty2.to_i * 10)
+    (qty1.to_i * 40 ) + (qty2.to_i * 35)
   end
 
 end
