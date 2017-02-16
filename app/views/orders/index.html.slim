@@ -32,4 +32,7 @@ table
 
       td
         = link_to 'Show', order_path(order.id)
+      td
+        = link_to 'Delete', order_path(order) ,method: :delete, 
+                   data: { confirm: "Are you sure" }
         br
