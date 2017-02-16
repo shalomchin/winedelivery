@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def new
-    @totalprice = 0
+    @order = Order.new
   end
 
   def index
@@ -11,6 +11,13 @@ class OrdersController < ApplicationController
     @order = Order.new(order_param)
     @order.save
     redirect_to @order
+  end
+
+  def destroy
+    @order = Order.find(params[:id])
+    @order.destroy
+
+    redirect_to orders_path
   end
 
   def show
