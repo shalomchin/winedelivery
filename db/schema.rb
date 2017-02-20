@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170215171557) do
+ActiveRecord::Schema.define(version: 20170220070638) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,9 +21,10 @@ ActiveRecord::Schema.define(version: 20170215171557) do
     t.integer  "qty1"
     t.integer  "qty2"
     t.integer  "totalprice"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.string   "contact"
+    t.string   "product_image"
   end
 
 end
