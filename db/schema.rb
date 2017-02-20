@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20170215171557) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orders", force: :cascade do |t|
     t.string   "name"
     t.text     "address"
     t.integer  "qty1"
     t.integer  "qty2"
-    t.decimal  "totalprice"
+    t.integer  "totalprice"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "contact"
