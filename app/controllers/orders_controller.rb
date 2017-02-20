@@ -9,8 +9,12 @@ class OrdersController < ApplicationController
 
   def create
     @order = Order.new(order_param)
-    @order.save
-    redirect_to @order
+    if @order.save
+      redirect_to @order
+    else 
+      render "new"
+      flash[:notice]= @order.errors.full_messages 
+    end
   end
 
   def destroy
