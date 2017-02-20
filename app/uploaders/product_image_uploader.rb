@@ -46,4 +46,16 @@ class ProductImageUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
+ def extension_whitelist
+   %w(jpg jpeg png gif)
+ end
+
+ def content_type_whitelist
+   /image\//
+ end
+
+ def content_type_backlist
+   ['application/text', 'application/zip']
+ end
+
 end
