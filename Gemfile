@@ -54,4 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "slim-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+gem 'carrierwave'
+
+
 ruby "2.4.0"
